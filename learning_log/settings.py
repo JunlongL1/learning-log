@@ -140,7 +140,7 @@ BOOTSTRAP3 = {
 cwd = os.getcwd()
 if cwd == '/app' or cwd[:4] == '/tmp':
     import dj_database_url
-    DATABASE = {
+    DATABASES = {
         'default': dj_database_url.config(default='postgres://loalhost')
     }
 
